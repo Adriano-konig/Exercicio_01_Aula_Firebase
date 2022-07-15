@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "217504764966",
+    "project_id": "exercicio-01-aula-firebase",
+    "storage_bucket": "exercicio-01-aula-firebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:217504764966:android:5cc64de1e240a6312202e7",
+        "android_client_info": {
+          "package_name": "br.com.zup.exercicio_aulafirebase_01"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "217504764966-17v33appo3u2uuu97bhihbfqmrjchnkt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATTQA6ydPyCkXHNSpYHJTTVDEwmvJamdg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "217504764966-17v33appo3u2uuu97bhihbfqmrjchnkt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
