@@ -9,4 +9,5 @@
     <string name="digite_sua_senha">Digite sua senha</string>
     <string name="cadastrar">Cadastrar</string>
     <string name="exit">Exit</string>
+    <string name="botão_salvar">Botão quando clica para salvar de edit</string>
 </resources>

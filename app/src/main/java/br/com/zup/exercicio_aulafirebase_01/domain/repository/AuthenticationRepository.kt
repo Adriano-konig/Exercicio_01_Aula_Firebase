@@ -28,6 +28,8 @@ class AuthenticationRepository {
         return auth.signInWithEmailAndPassword(email, password)
     }
 
+    fun getCurrentUser() = auth.currentUser
+
     fun getNameUser(): String = auth.currentUser?.displayName.toString()
 
     fun getEmailUser(): String = auth.currentUser?.email.toString()

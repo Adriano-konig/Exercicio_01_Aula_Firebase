@@ -4,9 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/adriano.konig/Desktop/Aula_Arquitetura/Exercicio_AulaFirebase_01/app/src/main/res/drawable/exit_app.xml" value="0.25" />
+        <entry key="..\:/Users/adriano.konig/Desktop/Aula_Arquitetura/Exercicio_AulaFirebase_01/app/src/main/res/layout/activity_lista_edit.xml" value="0.358695652173913" />
         <entry key="..\:/Users/adriano.konig/Desktop/Aula_Arquitetura/Exercicio_AulaFirebase_01/app/src/main/res/layout/activity_login.xml" value="0.30932971014492755" />
         <entry key="..\:/Users/adriano.konig/Desktop/Aula_Arquitetura/Exercicio_AulaFirebase_01/app/src/main/res/layout/activity_main.xml" value="0.30932971014492755" />
         <entry key="..\:/Users/adriano.konig/Desktop/Aula_Arquitetura/Exercicio_AulaFirebase_01/app/src/main/res/layout/activity_registro.xml" value="0.30932971014492755" />
+        <entry key="..\:/Users/adriano.konig/Desktop/Aula_Arquitetura/Exercicio_AulaFirebase_01/app/src/main/res/layout/edit_item.xml" value="0.358695652173913" />
         <entry key="..\:/Users/adriano.konig/Desktop/Aula_Arquitetura/Exercicio_AulaFirebase_01/app/src/main/res/menu/menu.xml" value="0.3671875" />
       </map>
     </option>

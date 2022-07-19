@@ -9,12 +9,14 @@ import android.view.MenuItem
 import androidx.lifecycle.ViewModelProvider
 import br.com.zup.exercicio_aulafirebase_01.R
 import br.com.zup.exercicio_aulafirebase_01.databinding.ActivityMainBinding
+import br.com.zup.exercicio_aulafirebase_01.ui.listaEdit.view.ListaEditActivity
 import br.com.zup.exercicio_aulafirebase_01.ui.login.view.LoginActivity
 import br.com.zup.exercicio_aulafirebase_01.ui.main.viewmodel.MainViewModel
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
+
 
     private val viewModel: MainViewModel by lazy {
         ViewModelProvider(this)[MainViewModel::class.java]
@@ -25,11 +27,21 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         viewModel.getUserName()
         showUserData()
+        favoritedImage()
     }
 
     private fun showUserData(){
         val name = viewModel.getUserEmail()
         binding.nome.text = "$name"
+    }
+
+    private fun favoritedImage(){
+        binding.buttonSalvar.setOnClickListener {
+//            val editText = binding.editText.text.toString()
+            viewModel.saveEdit()
+            startActivity(Intent(this, ListaEditActivity::class.java))
+//            binding.ivFavorite.setImageResource(R.drawable.ic_favorite)
+        }
     }
 
 

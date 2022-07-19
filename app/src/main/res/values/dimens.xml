@@ -2,4 +2,9 @@
 <resources>
     <dimen name="size_32dp">32dp</dimen>
     <dimen name="margin_16dp">16dp</dimen>
+    <dimen name="size_8">8dp</dimen>
+    <dimen name="size_250">250dp</dimen>
+    <dimen name="size_40">40dp</dimen>
+    <dimen name="size_80">80dp</dimen>
+    <dimen name="size_100">100dp</dimen>
 </resources>
