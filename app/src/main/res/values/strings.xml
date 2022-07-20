@@ -10,4 +10,5 @@
     <string name="cadastrar">Cadastrar</string>
     <string name="exit">Exit</string>
     <string name="botão_salvar">Botão quando clica para salvar de edit</string>
+    <string name = "test_crash">test_crash</string>
 </resources>

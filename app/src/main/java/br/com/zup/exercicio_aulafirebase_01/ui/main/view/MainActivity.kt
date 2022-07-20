@@ -6,7 +6,11 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
+import android.view.ViewGroup
+import android.widget.Button
+import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.lifecycleScope
 import br.com.zup.exercicio_aulafirebase_01.R
 import br.com.zup.exercicio_aulafirebase_01.databinding.ActivityMainBinding
 import br.com.zup.exercicio_aulafirebase_01.ui.listaEdit.view.ListaEditActivity
@@ -25,10 +29,35 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        initObsrvable()
         viewModel.getUserName()
         showUserData()
         favoritedImage()
+        crashButton()
     }
+
+    private fun crashButton(){
+        val crashButton = Button(this)
+        crashButton.text = getString(R.string.test_crash)
+        crashButton.setOnClickListener {
+            throw RuntimeException("Test Crash") // Force a crash
+        }
+
+        addContentView(crashButton, ViewGroup.LayoutParams(
+            ViewGroup.LayoutParams.MATCH_PARENT,
+            ViewGroup.LayoutParams.WRAP_CONTENT))
+    }
+
+    private fun initObsrvable(){
+        viewModel.currentToken.observe(this){
+            binding.tvToken.text = it
+        }
+        viewModel.lastNotification.observe(this){
+            binding.tvNotificationTitle.text = it.title
+            binding.tvNotificationBody.text = it.body
+        }
+    }
+
 
     private fun showUserData(){
         val name = viewModel.getUserEmail()

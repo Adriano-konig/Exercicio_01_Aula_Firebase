@@ -7,5 +7,7 @@ import kotlinx.parcelize.Parcelize
 @Parcelize
 data class EditResponse(
     @SerializedName("file")
-    val edit: String = ""
+    val edit: String = "",
+    var title: String = "",
+    var body: String = ""
 ):Parcelable
